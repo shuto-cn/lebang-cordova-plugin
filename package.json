@@ -1,0 +1,19 @@
+{
+  "name": "lebang",
+  "version": "1.0.0",
+  "description": "lebang user plugin",
+  "cordova": {
+    "id": "lebang-cordova-plugin",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios"
+  ],
+  "author": "wux",
+  "license": "MIT"
+}
