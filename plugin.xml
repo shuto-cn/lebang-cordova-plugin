@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <plugin id="lebang-cordova-plugin" version="1.0.0" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
-	<name>lebang</name>
+	<name>lebang-cordova-plugin</name>
 	<js-module name="lebang" src="www/lebang.js">
 		<clobbers target="lebang" />
 	</js-module>

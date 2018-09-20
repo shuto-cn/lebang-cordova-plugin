@@ -1,5 +1,5 @@
 {
-  "name": "lebang",
+  "name": "lebang-cordova-plugin",
   "version": "1.0.0",
   "description": "lebang user plugin",
   "cordova": {
