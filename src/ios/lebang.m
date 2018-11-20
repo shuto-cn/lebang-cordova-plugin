@@ -1,4 +1,5 @@
 #import <Cordova/CDV.h>
+#import "VKUserInfoTool.h"
 
 @interface lebang : CDVPlugin {
     // Member variables go here.
@@ -25,15 +26,21 @@
 {
     CDVPluginResult* pluginResult = nil;
     
-    pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsDictionary:[self getUser]];
+    pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK
+                                 messageAsDictionary:[self getUser]];
     
     [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
 }
 
 - (NSDictionary*)getUser
 {
-    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
-    return [userDefaults dictionaryForKey:@"lebangUser"];
+#warning YOUNG MARK
+    // old code
+//    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+//    return [userDefaults dictionaryForKey:@"lebangUser"];
+    // new code
+    VKUserInfoTool *userInfo = [VKUserInfoTool sharedInstance];
+    return [userInfo getLBUserIofo];
 }
 
 @end
